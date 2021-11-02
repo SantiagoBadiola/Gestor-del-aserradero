@@ -4,9 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary1
+namespace ENTIDADES
 {
-    class clsERodal
+    public class clsERodal
     {
+        public int idRodal { get; set; }
+        public int CantArboles { get; set; }
+        public string fechaDePlantacion { get; set; }
+        public string especie { get; set; }
+
+
     }
 }

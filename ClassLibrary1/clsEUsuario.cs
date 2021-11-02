@@ -8,7 +8,14 @@ namespace ENTIDADES
 {
       public class clsEUsuario
     {
-        public string Nombre { get; set; }
+        public int CI { get; set; }
+        public string nombre { get; set; }
+        public string apellido { get; set; }
         public string contrasenia { get; set; }
+        public string tipo { get; set; }
+        
+        
+        
+            
     }
 }

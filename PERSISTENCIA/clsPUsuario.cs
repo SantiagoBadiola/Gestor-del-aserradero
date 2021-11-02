@@ -15,7 +15,7 @@ namespace PERSISTENCIA
             MySqlDataReader datos; //objeto que representa las filas de la tabla en memoria
             clsEUsuario unEU = null;
             string consulta; //crea la variable que almacena la consulta
-            consulta = "SELECT * FROM aserrader INNER JOIN personas ON usuario.cedula = personas.cedula WHERE usuario='" + usu + "' AND contrasenia='" + contra + "';"; //define la consulta
+            consulta = "SELECT * FROM usuario WHERE  CI='" + usu + "' AND contrasenia='" + contra + "';"; //define la consulta
             datos = ejecutarYdevolver(consulta); //almacena en la variable datos los resultas de la consulta con la BD
             if (datos.Read())
             { 
@@ -29,12 +29,52 @@ namespace PERSISTENCIA
         {
             clsEUsuario unEU = new clsEUsuario();
 
+            unEU.CI = fila.GetInt32("CI");
             unEU.contrasenia = fila.GetString("contrasenia");
-            unEU.Nombre = fila.GetString("Nombre");
-            
-
+            unEU.nombre = fila.GetString("Nombre");
+            unEU.apellido = fila.GetString("apellido");
+            unEU.tipo = fila.GetString("tipo");
             return unEU; 
 
+        }
+
+        public void altaUsuario(clsEUsuario unEU)
+        {
+            string consulta;
+            consulta = "INSERT INTO usuario VALUES('" + unEU.CI + "','" + unEU.nombre + "','" + unEU.apellido + "','" + unEU.contrasenia + "','" + unEU.tipo + "');";
+            ejecutarSQL(consulta);
+        }
+
+        public void bajaUsuario(clsEUsuario unEU)
+        {
+            string consulta;
+            consulta = "DELETE FROM usuario WHERE CI=" + unEU.CI;
+            ejecutarSQL(consulta);
+        }
+
+        public void modificarUsuario(clsEUsuario unEU)
+        {
+            string consulta;
+            consulta = "UPDATE usuario SET  nombre='" + unEU.nombre + "',apellido='" + unEU.apellido + "',contrasenia='" + unEU.contrasenia + "',tipo='" + unEU.tipo + "' WHERE CI=" + unEU.CI;
+            ejecutarSQL(consulta);
+        }
+
+        public List<clsEUsuario> listarUsuarios()
+        {
+            List<clsEUsuario> colUsuarios = new List<clsEUsuario>();
+            MySqlDataReader datos;
+            string consulta;
+            clsEUsuario unEU;
+            consulta = "SELECT * FROM usuario";
+            datos = ejecutarYdevolver(consulta);
+
+            while (datos.Read())
+            {
+                unEU = recrearUsuario(datos);
+                colUsuarios.Add(unEU);
+            }
+
+            return colUsuarios;
         }
     }
 }
