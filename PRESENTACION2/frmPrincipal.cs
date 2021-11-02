@@ -33,7 +33,7 @@ namespace PRESENTACION2
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            frmUsuarios unFU = new frmUsuarios();
+            frmUsuarios unFU = new frmUsuarios();//
             unFU.Show();
             this.Hide();
         }
