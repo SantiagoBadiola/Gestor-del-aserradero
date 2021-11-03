@@ -273,8 +273,9 @@
             this.ClientSize = new System.Drawing.Size(931, 597);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmUsuarios";
-            this.Text = "Menu principal";
+            this.Text = "Usuarios";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -71,3 +71,5 @@ C:\Users\kiape\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\Wi
 C:\Users\kiape\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\PRESENTACION2.frmUsuarios.resources
 C:\Users\kiape\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\PRESENTACION2.Properties.Resources.resources
 C:\Users\kiape\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\PRESENTACION2.csproj.GenerateResource.Cache
+C:\Users\kiape\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\PRESENTACION2.frmEspecies.resources
+C:\Users\kiape\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\PRESENTACION2.frmTrozas.resources

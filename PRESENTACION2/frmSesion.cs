@@ -26,7 +26,7 @@ namespace WindowsFormsApplication2
             clsEUsuario unEU = new clsEUsuario();
 
 
-            unEU = unaC.login(txtCI.Text, Contrasena.Text);
+            unEU = unaC.login(txtID.Text, Contrasena.Text);
         
           
 
@@ -45,6 +45,20 @@ namespace WindowsFormsApplication2
 
             
         }
+
         
+     
+
+        
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
