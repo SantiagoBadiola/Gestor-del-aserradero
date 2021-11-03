@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmEspecies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEspecies.designer.cs">
+      <DependentUpon>frmEspecies.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     <Compile Include="frmSesion.designer.cs">
       <DependentUpon>frmSesion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTrozas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrozas.designer.cs">
+      <DependentUpon>frmTrozas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +91,9 @@
     <Compile Include="Interface1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmEspecies.resx">
+      <DependentUpon>frmEspecies.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPedidos.resx">
       <DependentUpon>frmPedidos.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSesion.resx">
       <DependentUpon>frmSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrozas.resx">
+      <DependentUpon>frmTrozas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsuarios.resx">
       <DependentUpon>frmUsuarios.cs</DependentUpon>
