@@ -48,6 +48,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Nombre = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
@@ -106,7 +110,7 @@
             // btnModificar2
             // 
             this.btnModificar2.BackColor = System.Drawing.Color.DarkGray;
-            this.btnModificar2.Location = new System.Drawing.Point(327, 174);
+            this.btnModificar2.Location = new System.Drawing.Point(308, 174);
             this.btnModificar2.Name = "btnModificar2";
             this.btnModificar2.Size = new System.Drawing.Size(102, 40);
             this.btnModificar2.TabIndex = 6;
@@ -117,7 +121,7 @@
             // btnEliminar2
             // 
             this.btnEliminar2.BackColor = System.Drawing.Color.DarkGray;
-            this.btnEliminar2.Location = new System.Drawing.Point(189, 174);
+            this.btnEliminar2.Location = new System.Drawing.Point(172, 174);
             this.btnEliminar2.Name = "btnEliminar2";
             this.btnEliminar2.Size = new System.Drawing.Size(101, 40);
             this.btnEliminar2.TabIndex = 6;
@@ -175,17 +179,19 @@
             // txtSalir
             // 
             this.txtSalir.BackColor = System.Drawing.Color.DarkGray;
-            this.txtSalir.Location = new System.Drawing.Point(606, 38);
+            this.txtSalir.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSalir.Location = new System.Drawing.Point(597, 38);
             this.txtSalir.Name = "txtSalir";
-            this.txtSalir.Size = new System.Drawing.Size(100, 40);
+            this.txtSalir.Size = new System.Drawing.Size(122, 40);
             this.txtSalir.TabIndex = 4;
-            this.txtSalir.Text = "Salir";
+            this.txtSalir.Text = "Volver al menu principal";
             this.txtSalir.UseVisualStyleBackColor = false;
             // 
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.DarkGray;
-            this.btnEliminar.Location = new System.Drawing.Point(210, 39);
+            this.btnEliminar.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Underline);
+            this.btnEliminar.Location = new System.Drawing.Point(193, 37);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(101, 40);
             this.btnEliminar.TabIndex = 3;
@@ -196,7 +202,8 @@
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.DarkGray;
-            this.btnModificar.Location = new System.Drawing.Point(348, 38);
+            this.btnModificar.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Underline);
+            this.btnModificar.Location = new System.Drawing.Point(329, 38);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(102, 40);
             this.btnModificar.TabIndex = 2;
@@ -207,7 +214,8 @@
             // btnListar
             // 
             this.btnListar.BackColor = System.Drawing.Color.DarkGray;
-            this.btnListar.Location = new System.Drawing.Point(484, 38);
+            this.btnListar.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Underline);
+            this.btnListar.Location = new System.Drawing.Point(468, 38);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(91, 40);
             this.btnListar.TabIndex = 1;
@@ -218,7 +226,8 @@
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.DarkGray;
-            this.btnAgregar.Location = new System.Drawing.Point(56, 38);
+            this.btnAgregar.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Underline);
+            this.btnAgregar.Location = new System.Drawing.Point(42, 38);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(113, 40);
             this.btnAgregar.TabIndex = 0;
@@ -229,6 +238,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.Nombre);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Location = new System.Drawing.Point(-5, 0);
@@ -240,7 +253,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.DarkGray;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(12, 30);
+            this.pictureBox5.Location = new System.Drawing.Point(51, 30);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(59, 61);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -259,6 +272,48 @@
             this.linkLabel1.TabIndex = 0;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Cerrar sesión";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(92, 128);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 24);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "label3";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(68, 165);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 24);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "label2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(11, 165);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 24);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Rol";
+            // 
+            // Nombre
+            // 
+            this.Nombre.AutoSize = true;
+            this.Nombre.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Nombre.Location = new System.Drawing.Point(11, 128);
+            this.Nombre.Name = "Nombre";
+            this.Nombre.Size = new System.Drawing.Size(75, 24);
+            this.Nombre.TabIndex = 18;
+            this.Nombre.Text = "Nombre";
             // 
             // frmProductos
             // 
@@ -302,5 +357,9 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.TextBox txtLote;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Nombre;
     }
 }
