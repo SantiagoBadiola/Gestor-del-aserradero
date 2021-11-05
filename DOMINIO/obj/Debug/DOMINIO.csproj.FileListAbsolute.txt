@@ -54,3 +54,17 @@ C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\DOMINIO\bin\Debug\MySql.Da
 C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\DOMINIO\obj\Debug\DOMINIO.csprojResolveAssemblyReference.cache
 C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\DOMINIO\obj\Debug\DOMINIO.dll
 C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\DOMINIO\obj\Debug\DOMINIO.pdb
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\DOMINIO\bin\Debug\DOMINIO.dll
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\DOMINIO\bin\Debug\DOMINIO.pdb
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\DOMINIO\bin\Debug\ENTIDADES.dll
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\DOMINIO\bin\Debug\PERSISTENCIA.dll
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\DOMINIO\bin\Debug\MySql.Data.dll
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\DOMINIO\bin\Debug\Google.Protobuf.dll
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\DOMINIO\bin\Debug\Renci.SshNet.dll
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\DOMINIO\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\DOMINIO\bin\Debug\ENTIDADES.pdb
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\DOMINIO\bin\Debug\PERSISTENCIA.pdb
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\DOMINIO\bin\Debug\MySql.Data.xml
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\DOMINIO\obj\Debug\DOMINIO.csprojResolveAssemblyReference.cache
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\DOMINIO\obj\Debug\DOMINIO.dll
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\DOMINIO\obj\Debug\DOMINIO.pdb

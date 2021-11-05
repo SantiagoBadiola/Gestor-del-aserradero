@@ -114,15 +114,15 @@
             // dgvPedidos
             // 
             this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPedidos.Location = new System.Drawing.Point(124, 252);
+            this.dgvPedidos.Location = new System.Drawing.Point(140, 218);
             this.dgvPedidos.Name = "dgvPedidos";
-            this.dgvPedidos.Size = new System.Drawing.Size(394, 171);
+            this.dgvPedidos.Size = new System.Drawing.Size(413, 198);
             this.dgvPedidos.TabIndex = 14;
             // 
             // btnModificar2
             // 
             this.btnModificar2.BackColor = System.Drawing.Color.DarkGray;
-            this.btnModificar2.Location = new System.Drawing.Point(327, 174);
+            this.btnModificar2.Location = new System.Drawing.Point(327, 143);
             this.btnModificar2.Name = "btnModificar2";
             this.btnModificar2.Size = new System.Drawing.Size(102, 40);
             this.btnModificar2.TabIndex = 6;
@@ -133,7 +133,7 @@
             // btnEliminar2
             // 
             this.btnEliminar2.BackColor = System.Drawing.Color.DarkGray;
-            this.btnEliminar2.Location = new System.Drawing.Point(189, 174);
+            this.btnEliminar2.Location = new System.Drawing.Point(178, 143);
             this.btnEliminar2.Name = "btnEliminar2";
             this.btnEliminar2.Size = new System.Drawing.Size(101, 40);
             this.btnEliminar2.TabIndex = 6;
@@ -144,7 +144,7 @@
             // btnAgregar2
             // 
             this.btnAgregar2.BackColor = System.Drawing.Color.DarkGray;
-            this.btnAgregar2.Location = new System.Drawing.Point(21, 174);
+            this.btnAgregar2.Location = new System.Drawing.Point(21, 143);
             this.btnAgregar2.Name = "btnAgregar2";
             this.btnAgregar2.Size = new System.Drawing.Size(113, 40);
             this.btnAgregar2.TabIndex = 6;
@@ -154,7 +154,7 @@
             // 
             // txtCantSoli
             // 
-            this.txtCantSoli.Location = new System.Drawing.Point(396, 106);
+            this.txtCantSoli.Location = new System.Drawing.Point(396, 78);
             this.txtCantSoli.Multiline = true;
             this.txtCantSoli.Name = "txtCantSoli";
             this.txtCantSoli.Size = new System.Drawing.Size(122, 32);
@@ -163,7 +163,7 @@
             // 
             // txtFechaIni
             // 
-            this.txtFechaIni.Location = new System.Drawing.Point(140, 106);
+            this.txtFechaIni.Location = new System.Drawing.Point(140, 78);
             this.txtFechaIni.Multiline = true;
             this.txtFechaIni.Name = "txtFechaIni";
             this.txtFechaIni.Size = new System.Drawing.Size(122, 32);
@@ -172,7 +172,7 @@
             // 
             // txtidPedido
             // 
-            this.txtidPedido.Location = new System.Drawing.Point(12, 106);
+            this.txtidPedido.Location = new System.Drawing.Point(12, 78);
             this.txtidPedido.Multiline = true;
             this.txtidPedido.Name = "txtidPedido";
             this.txtidPedido.Size = new System.Drawing.Size(122, 32);
@@ -214,7 +214,7 @@
             this.panel2.Controls.Add(this.btnAgregar);
             this.panel2.Location = new System.Drawing.Point(178, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(742, 573);
+            this.panel2.Size = new System.Drawing.Size(741, 571);
             this.panel2.TabIndex = 7;
             // 
             // panel3
@@ -231,14 +231,14 @@
             this.panel3.Controls.Add(this.txtCantSoli);
             this.panel3.Controls.Add(this.txtFechaIni);
             this.panel3.Controls.Add(this.txtidPedido);
-            this.panel3.Location = new System.Drawing.Point(21, 84);
+            this.panel3.Location = new System.Drawing.Point(22, 94);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(704, 476);
+            this.panel3.Size = new System.Drawing.Size(704, 464);
             this.panel3.TabIndex = 5;
             // 
             // txtCantAsig
             // 
-            this.txtCantAsig.Location = new System.Drawing.Point(524, 106);
+            this.txtCantAsig.Location = new System.Drawing.Point(524, 78);
             this.txtCantAsig.Multiline = true;
             this.txtCantAsig.Name = "txtCantAsig";
             this.txtCantAsig.Size = new System.Drawing.Size(122, 32);
@@ -247,7 +247,7 @@
             // 
             // txtIDPro
             // 
-            this.txtIDPro.Location = new System.Drawing.Point(582, 174);
+            this.txtIDPro.Location = new System.Drawing.Point(582, 143);
             this.txtIDPro.Multiline = true;
             this.txtIDPro.Name = "txtIDPro";
             this.txtIDPro.Size = new System.Drawing.Size(122, 32);
@@ -256,7 +256,7 @@
             // 
             // txtFechaLim
             // 
-            this.txtFechaLim.Location = new System.Drawing.Point(268, 106);
+            this.txtFechaLim.Location = new System.Drawing.Point(268, 78);
             this.txtFechaLim.Multiline = true;
             this.txtFechaLim.Name = "txtFechaLim";
             this.txtFechaLim.Size = new System.Drawing.Size(122, 32);
@@ -265,7 +265,7 @@
             // 
             // txtClienteID
             // 
-            this.txtClienteID.Location = new System.Drawing.Point(454, 174);
+            this.txtClienteID.Location = new System.Drawing.Point(454, 143);
             this.txtClienteID.Multiline = true;
             this.txtClienteID.Name = "txtClienteID";
             this.txtClienteID.Size = new System.Drawing.Size(122, 32);
@@ -287,7 +287,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(190)))));
-            this.ClientSize = new System.Drawing.Size(931, 557);
+            this.ClientSize = new System.Drawing.Size(931, 597);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "frmPedidos";
