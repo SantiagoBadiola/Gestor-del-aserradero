@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="clsPCliente.cs" />
     <Compile Include="clsPersistencia.cs" />
+    <Compile Include="clsPEspecie.cs" />
     <Compile Include="clsPLote.cs" />
     <Compile Include="clsPPedido.cs" />
     <Compile Include="clsPProducto.cs" />

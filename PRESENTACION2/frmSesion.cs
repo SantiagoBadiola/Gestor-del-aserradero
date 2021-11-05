@@ -28,7 +28,10 @@ namespace WindowsFormsApplication2
 
             unEU = unaC.login(txtID.Text, Contrasena.Text);
         
-          
+             if((txtID == null) || (Contrasena == null))
+            {
+                MessageBox.Show("Campos vacios");
+            }
 
             if (unEU == null)
             {
@@ -44,21 +47,6 @@ namespace WindowsFormsApplication2
             }
 
             
-        }
-
-        
-     
-
-        
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

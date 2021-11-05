@@ -84,7 +84,7 @@ namespace DOMINIO
         public void bajaCliente(clsECliente unEC)
         {
             clsDCliente unDC = new clsDCliente();
-            unDC.altaCliente(unEC);
+            unDC.bajaCliente(unEC);
 
         }
 
@@ -192,6 +192,34 @@ namespace DOMINIO
 
         }
 
+        //ESPECIE
+        public void altaEspecie(clsEEspecie unEE)
+        {
+            clsDEspecie unDE = new clsDEspecie();
+            unDE.altaEspecie(unEE);
+        }
+
+        public void bajaEspecie(clsEEspecie unEE)
+        {
+            clsDEspecie unDE = new clsDEspecie();
+            unDE.bajaEspecie(unEE);
+        }
+
+        public void modificarEspecie(clsEEspecie unEE)
+        {
+            clsDEspecie unDE = new clsDEspecie();
+            unDE.modificarEspecie(unEE);
+        }
+
+        public List<clsEEspecie> listarEspecie()
+        {
+            clsDEspecie unDE = new clsDEspecie();
+
+            return unDE.listarEspecies();
+
+        }
+
+     
 
     }
 }

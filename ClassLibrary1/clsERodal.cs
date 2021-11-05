@@ -9,9 +9,9 @@ namespace ENTIDADES
     public class clsERodal
     {
         public int idRodal { get; set; }
-        public int CantArboles { get; set; }
-        public string fechaDePlantacion { get; set; }
-        public string especie { get; set; }
+        public int tamanio { get; set; }
+        public string fecha { get; set; }
+        public int especie { get; set; }
 
 
     }

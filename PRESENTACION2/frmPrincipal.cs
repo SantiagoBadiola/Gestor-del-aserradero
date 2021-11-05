@@ -22,7 +22,8 @@ namespace PRESENTACION2
         private void Form1_Load(object sender, EventArgs e)
         {
             lblBienvenido.Text = "Hola " + elUsuario.nombre;
-            if (elUsuario.tipo == "estandar")
+            string tipo = elUsuario.tipo;
+            if (tipo == "estandar")
             {
                 btnUsuarios.Enabled = false;
 
@@ -49,6 +50,34 @@ namespace PRESENTACION2
         {
             frmPedidos unFP = new frmPedidos();
             unFP.Show();
+            this.Hide();
+        }
+
+        private void btnEspecies_Click(object sender, EventArgs e)
+        {
+            frmEspecies unFE = new frmEspecies();
+            unFE.Show();
+            this.Hide();
+        }
+
+        private void btnTrozas_Click(object sender, EventArgs e)
+        {
+            frmTrozas unFT = new frmTrozas();
+            unFT.Show();
+            this.Hide();
+        }
+
+        private void btnRodales_Click(object sender, EventArgs e)
+        {
+            frmRodales unFR = new frmRodales();
+            unFR.Show();
+            this.Hide();
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            frmClientes unFR = new frmClientes();
+            unFR.Show();
             this.Hide();
         }
     }

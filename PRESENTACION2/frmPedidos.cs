@@ -19,7 +19,6 @@ namespace PRESENTACION2
         public frmPedidos()
         {
             InitializeComponent();
-            this.Load += Form1_Load;
         }
 
         private void ocultarbotones() {
@@ -38,7 +37,7 @@ namespace PRESENTACION2
             txtClienteID.Visible = false;
             txtIDPro.Visible = false;
         }
-        private void Form1_Load(object sender, EventArgs e)
+        private void frmPedidos_Load(object sender, EventArgs e)
         {
             ocultarCajas();
             ocultarbotones();
@@ -54,8 +53,8 @@ namespace PRESENTACION2
             txtCantSoli.Visible = true;
             txtCantAsig.Visible = true;
             txtClienteID.Visible = true;
+            
             btnAgregar2.Visible = true;
-
         }
 
         private void btnAgregar2_Click(object sender, EventArgs e)
@@ -67,6 +66,7 @@ namespace PRESENTACION2
             unEP.cantAsig = Convert.ToInt32(txtCantAsig.Text);
             unEP.idCliente = Convert.ToInt32(txtClienteID.Text);
             unaC.altaPedido(unEP);
+            MessageBox.Show(" Pedido agregado");
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -81,6 +81,7 @@ namespace PRESENTACION2
         {
             unEP.idPedido = Convert.ToInt32(txtidPedido.Text);
             unaC.bajaPedido(unEP);
+            MessageBox.Show(" Pedido eliminado");
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -105,6 +106,7 @@ namespace PRESENTACION2
             unEP.cantAsig = Convert.ToInt32(txtCantAsig.Text);
             unEP.idCliente = Convert.ToInt32(txtClienteID.Text);
             unaC.modificarPedido(unEP);
+            MessageBox.Show(" Pedido modificado");
         }
 
         private void btnListar_Click(object sender, EventArgs e)
@@ -112,5 +114,7 @@ namespace PRESENTACION2
             dgvPedidos.Visible = true;
             dgvPedidos.DataSource = unaC.listarPedidos();
         }
+
+        
     }
 }

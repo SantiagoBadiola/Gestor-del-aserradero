@@ -45,11 +45,11 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtCantAsig = new System.Windows.Forms.TextBox();
+            this.txtIDPro = new System.Windows.Forms.TextBox();
+            this.txtFechaLim = new System.Windows.Forms.TextBox();
             this.txtClienteID = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtFechaLim = new System.Windows.Forms.TextBox();
-            this.txtIDPro = new System.Windows.Forms.TextBox();
-            this.txtCantAsig = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
@@ -236,9 +236,36 @@
             this.panel3.Size = new System.Drawing.Size(704, 476);
             this.panel3.TabIndex = 5;
             // 
+            // txtCantAsig
+            // 
+            this.txtCantAsig.Location = new System.Drawing.Point(524, 106);
+            this.txtCantAsig.Multiline = true;
+            this.txtCantAsig.Name = "txtCantAsig";
+            this.txtCantAsig.Size = new System.Drawing.Size(122, 32);
+            this.txtCantAsig.TabIndex = 18;
+            this.txtCantAsig.Text = "Cantidad Asignada";
+            // 
+            // txtIDPro
+            // 
+            this.txtIDPro.Location = new System.Drawing.Point(582, 174);
+            this.txtIDPro.Multiline = true;
+            this.txtIDPro.Name = "txtIDPro";
+            this.txtIDPro.Size = new System.Drawing.Size(122, 32);
+            this.txtIDPro.TabIndex = 17;
+            this.txtIDPro.Text = "IDProducto";
+            // 
+            // txtFechaLim
+            // 
+            this.txtFechaLim.Location = new System.Drawing.Point(268, 106);
+            this.txtFechaLim.Multiline = true;
+            this.txtFechaLim.Name = "txtFechaLim";
+            this.txtFechaLim.Size = new System.Drawing.Size(122, 32);
+            this.txtFechaLim.TabIndex = 16;
+            this.txtFechaLim.Text = "Fecha Limite";
+            // 
             // txtClienteID
             // 
-            this.txtClienteID.Location = new System.Drawing.Point(444, 174);
+            this.txtClienteID.Location = new System.Drawing.Point(454, 174);
             this.txtClienteID.Multiline = true;
             this.txtClienteID.Name = "txtClienteID";
             this.txtClienteID.Size = new System.Drawing.Size(122, 32);
@@ -255,33 +282,6 @@
             this.panel1.Size = new System.Drawing.Size(162, 603);
             this.panel1.TabIndex = 6;
             // 
-            // txtFechaLim
-            // 
-            this.txtFechaLim.Location = new System.Drawing.Point(268, 106);
-            this.txtFechaLim.Multiline = true;
-            this.txtFechaLim.Name = "txtFechaLim";
-            this.txtFechaLim.Size = new System.Drawing.Size(122, 32);
-            this.txtFechaLim.TabIndex = 16;
-            this.txtFechaLim.Text = "Fecha Limite";
-            // 
-            // txtIDPro
-            // 
-            this.txtIDPro.Location = new System.Drawing.Point(582, 174);
-            this.txtIDPro.Multiline = true;
-            this.txtIDPro.Name = "txtIDPro";
-            this.txtIDPro.Size = new System.Drawing.Size(122, 32);
-            this.txtIDPro.TabIndex = 17;
-            this.txtIDPro.Text = "IDProducto";
-            // 
-            // txtCantAsig
-            // 
-            this.txtCantAsig.Location = new System.Drawing.Point(524, 106);
-            this.txtCantAsig.Multiline = true;
-            this.txtCantAsig.Name = "txtCantAsig";
-            this.txtCantAsig.Size = new System.Drawing.Size(122, 32);
-            this.txtCantAsig.TabIndex = 18;
-            this.txtCantAsig.Text = "Cantidad Asignada";
-            // 
             // frmPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -292,6 +292,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmPedidos";
             this.Text = "frmPedidos";
+            this.Load += new System.EventHandler(this.frmPedidos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);

@@ -13,3 +13,8 @@ C:\Users\kiape\Documents\GitHub\Gestor-del-aserradero\ClassLibrary1\bin\Debug\EN
 C:\Users\kiape\Documents\GitHub\Gestor-del-aserradero\ClassLibrary1\obj\Debug\ENTIDADES.csprojResolveAssemblyReference.cache
 C:\Users\kiape\Documents\GitHub\Gestor-del-aserradero\ClassLibrary1\obj\Debug\ENTIDADES.dll
 C:\Users\kiape\Documents\GitHub\Gestor-del-aserradero\ClassLibrary1\obj\Debug\ENTIDADES.pdb
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\ClassLibrary1\bin\Debug\ENTIDADES.dll
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\ClassLibrary1\bin\Debug\ENTIDADES.pdb
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\ClassLibrary1\obj\Debug\ENTIDADES.csprojResolveAssemblyReference.cache
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\ClassLibrary1\obj\Debug\ENTIDADES.dll
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\ClassLibrary1\obj\Debug\ENTIDADES.pdb

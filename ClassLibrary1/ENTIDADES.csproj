@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsECliente.cs" />
+    <Compile Include="clsEEspecie.cs" />
     <Compile Include="clsELote.cs" />
     <Compile Include="clsEPedido.cs" />
     <Compile Include="clsEProducto.cs" />

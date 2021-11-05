@@ -33,3 +33,15 @@ C:\Users\kiape\Documents\GitHub\Gestor-del-aserradero\PERSISTENCIA\bin\Debug\MyS
 C:\Users\kiape\Documents\GitHub\Gestor-del-aserradero\PERSISTENCIA\obj\Debug\PERSISTENCIA.csprojResolveAssemblyReference.cache
 C:\Users\kiape\Documents\GitHub\Gestor-del-aserradero\PERSISTENCIA\obj\Debug\PERSISTENCIA.dll
 C:\Users\kiape\Documents\GitHub\Gestor-del-aserradero\PERSISTENCIA\obj\Debug\PERSISTENCIA.pdb
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PERSISTENCIA\bin\Debug\PERSISTENCIA.dll
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PERSISTENCIA\bin\Debug\PERSISTENCIA.pdb
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PERSISTENCIA\bin\Debug\ENTIDADES.dll
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PERSISTENCIA\bin\Debug\MySql.Data.dll
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PERSISTENCIA\bin\Debug\Google.Protobuf.dll
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PERSISTENCIA\bin\Debug\Renci.SshNet.dll
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PERSISTENCIA\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PERSISTENCIA\bin\Debug\ENTIDADES.pdb
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PERSISTENCIA\bin\Debug\MySql.Data.xml
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PERSISTENCIA\obj\Debug\PERSISTENCIA.csprojResolveAssemblyReference.cache
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PERSISTENCIA\obj\Debug\PERSISTENCIA.dll
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PERSISTENCIA\obj\Debug\PERSISTENCIA.pdb

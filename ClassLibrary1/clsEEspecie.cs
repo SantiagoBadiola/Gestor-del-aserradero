@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace ENTIDADES
 {
-    public class clsETroza
+    public class clsEEspecie
     {
-        public int idTroza { get; set; }
-        public string medidad { get; set; }
-        public int rodal { get; set; }
+        public int idEspecie { get; set; }
+        public string nombre { get; set; }
     }
 }

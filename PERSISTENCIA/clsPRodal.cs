@@ -14,7 +14,7 @@ namespace PERSISTENCIA
         public void altaRodal(clsERodal unER)
         {
             string consulta;
-            consulta = "INSERT INTO rodal VALUES(0,'" +  unER.CantArboles + "','" + unER.fechaDePlantacion + "','" + unER.especie + "');";
+            consulta = "INSERT INTO rodal VALUES('" +  unER.idRodal + "','" + unER.tamanio + "','" + unER.fecha + "','" + unER.especie + "');";
             ejecutarSQL(consulta);
         }
 
@@ -28,7 +28,7 @@ namespace PERSISTENCIA
         public void modificarRodal(clsERodal unER)
         {
             string consulta;
-            consulta = "UPDATE rodal SET  CantArboles='" + unER.CantArboles + "'fechaDePlantacion='" + unER.fechaDePlantacion + "'especie='" + unER.especie + "' WHERE idRodal=" + unER.idRodal;
+            consulta = "UPDATE rodal SET  tamanio='" + unER.tamanio + "',fechaDePlantacion='" + unER.fecha + "',especie='" + unER.especie + "' WHERE idRodal=" + unER.idRodal;
             ejecutarSQL(consulta);
         }
 
@@ -54,9 +54,9 @@ namespace PERSISTENCIA
         {
             clsERodal unER = new clsERodal();
             unER.idRodal = unaFila.GetInt32("idRodal");
-            unER.CantArboles = unaFila.GetInt32("cantArboles");
-            unER.fechaDePlantacion = unaFila.GetString("fechaDePlantacion");
-            unER.especie = unaFila.GetString("especie");
+            unER.tamanio = unaFila.GetInt32("tamanio");
+            unER.fecha = unaFila.GetString("fechaDePlantacion");
+            unER.especie = unaFila.GetInt32("especie");
             return unER;
 
         }

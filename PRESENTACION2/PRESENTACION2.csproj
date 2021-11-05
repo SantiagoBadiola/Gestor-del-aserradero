@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEspecies.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     <Compile Include="frmPrincipal.designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRodales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRodales.Designer.cs">
+      <DependentUpon>frmRodales.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +103,9 @@
     <Compile Include="Interface1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEspecies.resx">
       <DependentUpon>frmEspecies.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRodales.resx">
+      <DependentUpon>frmRodales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSesion.resx">
       <DependentUpon>frmSesion.cs</DependentUpon>

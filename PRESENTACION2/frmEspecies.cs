@@ -7,14 +7,93 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ENTIDADES;
+using DOMINIO;
 
 namespace PRESENTACION2
 {
     public partial class frmEspecies : Form
     {
+        clsEEspecie unEE = new clsEEspecie();
+        clsControladora unaC = new clsControladora();
         public frmEspecies()
         {
             InitializeComponent();
+        }
+        private void ocultarCajas()
+        {
+            txtID.Visible = false;
+            txtNombre.Visible = false;
+
+        }
+        private void ocultarbotones()
+        {
+            btnAgregar2.Visible = false;
+            btnEliminar2.Visible = false;
+            btnModificar2.Visible = false;
+            dgvEspecie.Visible = false;
+        }
+       
+        private void frmEspecies_Load(object sender, EventArgs e)
+        {
+            ocultarCajas();
+            ocultarbotones();
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ocultarbotones();
+            ocultarCajas();
+            txtID.Visible = true;
+            txtNombre.Visible = true;
+            btnAgregar2.Visible = true;
+        }
+
+        private void btnAgregar2_Click(object sender, EventArgs e)
+        {
+            unEE.idEspecie = Convert.ToInt32(txtID.Text);
+            unEE.nombre = txtNombre.Text;
+            unaC.altaEspecie(unEE);
+            MessageBox.Show("Especie agregada");
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            ocultarbotones();
+            ocultarCajas();
+            txtID.Visible = true;
+            btnEliminar2.Visible = true;
+        }
+
+        private void btnEliminar2_Click(object sender, EventArgs e)
+        {
+            unEE.idEspecie = Convert.ToInt32(txtID.Text);
+            unaC.bajaEspecie(unEE);
+            MessageBox.Show("Especie eliminada");
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            ocultarbotones();
+            ocultarCajas();
+            txtID.Visible = true;
+            txtNombre.Visible = true;
+            btnModificar2.Visible = true;
+        }
+
+        private void btnModificar2_Click(object sender, EventArgs e)
+        {
+            unEE.idEspecie = Convert.ToInt32(txtID.Text);
+            unEE.nombre = txtNombre.Text;
+            unaC.modificarEspecie(unEE);
+            MessageBox.Show("Especie editada");
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            ocultarCajas();
+            ocultarbotones();
+            dgvEspecie.Visible = true;
+            dgvEspecie.DataSource = unaC.listarEspecie();
         }
     }
 }

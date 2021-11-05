@@ -39,14 +39,22 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dgvEspecie = new System.Windows.Forms.DataGridView();
+            this.btnModificar2 = new System.Windows.Forms.Button();
+            this.btnEliminar2 = new System.Windows.Forms.Button();
+            this.btnAgregar2 = new System.Windows.Forms.Button();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnListar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEspecie)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -145,10 +153,10 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(100)))));
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnEliminar);
+            this.panel2.Controls.Add(this.btnModificar);
+            this.panel2.Controls.Add(this.btnListar);
+            this.panel2.Controls.Add(this.btnAgregar);
             this.panel2.Location = new System.Drawing.Point(177, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(742, 573);
@@ -157,10 +165,75 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.Controls.Add(this.dgvEspecie);
+            this.panel3.Controls.Add(this.btnModificar2);
+            this.panel3.Controls.Add(this.btnEliminar2);
+            this.panel3.Controls.Add(this.btnAgregar2);
+            this.panel3.Controls.Add(this.txtNombre);
+            this.panel3.Controls.Add(this.txtID);
             this.panel3.Location = new System.Drawing.Point(21, 84);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(704, 476);
             this.panel3.TabIndex = 5;
+            // 
+            // dgvEspecie
+            // 
+            this.dgvEspecie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEspecie.Location = new System.Drawing.Point(169, 273);
+            this.dgvEspecie.Name = "dgvEspecie";
+            this.dgvEspecie.Size = new System.Drawing.Size(394, 171);
+            this.dgvEspecie.TabIndex = 16;
+            // 
+            // btnModificar2
+            // 
+            this.btnModificar2.BackColor = System.Drawing.Color.DarkGray;
+            this.btnModificar2.Location = new System.Drawing.Point(311, 179);
+            this.btnModificar2.Name = "btnModificar2";
+            this.btnModificar2.Size = new System.Drawing.Size(113, 40);
+            this.btnModificar2.TabIndex = 15;
+            this.btnModificar2.Text = "Modificar";
+            this.btnModificar2.UseVisualStyleBackColor = false;
+            this.btnModificar2.Click += new System.EventHandler(this.btnModificar2_Click);
+            // 
+            // btnEliminar2
+            // 
+            this.btnEliminar2.BackColor = System.Drawing.Color.DarkGray;
+            this.btnEliminar2.Location = new System.Drawing.Point(169, 179);
+            this.btnEliminar2.Name = "btnEliminar2";
+            this.btnEliminar2.Size = new System.Drawing.Size(113, 40);
+            this.btnEliminar2.TabIndex = 14;
+            this.btnEliminar2.Text = "Eliminar";
+            this.btnEliminar2.UseVisualStyleBackColor = false;
+            this.btnEliminar2.Click += new System.EventHandler(this.btnEliminar2_Click);
+            // 
+            // btnAgregar2
+            // 
+            this.btnAgregar2.BackColor = System.Drawing.Color.DarkGray;
+            this.btnAgregar2.Location = new System.Drawing.Point(32, 179);
+            this.btnAgregar2.Name = "btnAgregar2";
+            this.btnAgregar2.Size = new System.Drawing.Size(113, 40);
+            this.btnAgregar2.TabIndex = 13;
+            this.btnAgregar2.Text = "Agregar";
+            this.btnAgregar2.UseVisualStyleBackColor = false;
+            this.btnAgregar2.Click += new System.EventHandler(this.btnAgregar2_Click);
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(195, 97);
+            this.txtNombre.Multiline = true;
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(122, 32);
+            this.txtNombre.TabIndex = 12;
+            this.txtNombre.Text = "Nombre";
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(32, 97);
+            this.txtID.Multiline = true;
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(122, 32);
+            this.txtID.TabIndex = 11;
+            this.txtID.Text = "ID";
             // 
             // button6
             // 
@@ -173,49 +246,53 @@
             this.button6.Text = "Informe por especie";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnEliminar
             // 
-            this.button5.BackColor = System.Drawing.Color.DarkGray;
-            this.button5.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Underline);
-            this.button5.Location = new System.Drawing.Point(190, 24);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(101, 40);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Eliminar";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnEliminar.BackColor = System.Drawing.Color.DarkGray;
+            this.btnEliminar.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Underline);
+            this.btnEliminar.Location = new System.Drawing.Point(190, 24);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(101, 40);
+            this.btnEliminar.TabIndex = 3;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // button4
+            // btnModificar
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkGray;
-            this.button4.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Underline);
-            this.button4.Location = new System.Drawing.Point(332, 24);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(102, 40);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Modificar";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnModificar.BackColor = System.Drawing.Color.DarkGray;
+            this.btnModificar.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Underline);
+            this.btnModificar.Location = new System.Drawing.Point(332, 24);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(102, 40);
+            this.btnModificar.TabIndex = 2;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
-            // button3
+            // btnListar
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkGray;
-            this.button3.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Underline);
-            this.button3.Location = new System.Drawing.Point(469, 24);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 40);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Listar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnListar.BackColor = System.Drawing.Color.DarkGray;
+            this.btnListar.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Underline);
+            this.btnListar.Location = new System.Drawing.Point(469, 24);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(91, 40);
+            this.btnListar.TabIndex = 1;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = false;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkGray;
-            this.button1.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Underline);
-            this.button1.Location = new System.Drawing.Point(40, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAgregar.BackColor = System.Drawing.Color.DarkGray;
+            this.btnAgregar.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Underline);
+            this.btnAgregar.Location = new System.Drawing.Point(40, 24);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(113, 40);
+            this.btnAgregar.TabIndex = 0;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmEspecies
             // 
@@ -228,10 +305,14 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmEspecies";
             this.Text = "frmEspecies";
+            this.Load += new System.EventHandler(this.frmEspecies_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEspecie)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -249,9 +330,15 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnListar;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Button btnModificar2;
+        private System.Windows.Forms.Button btnEliminar2;
+        private System.Windows.Forms.Button btnAgregar2;
+        private System.Windows.Forms.DataGridView dgvEspecie;
     }
 }

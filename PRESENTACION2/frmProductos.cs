@@ -66,7 +66,7 @@ namespace PRESENTACION2
             unEP.precio_u = Convert.ToInt32(txtPrecio.Text);
             unEP.lote = Convert.ToInt32(txtLote.Text);
             unaC.altaProducto(unEP);
-            
+            MessageBox.Show(" Producto agregado"); 
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -82,7 +82,7 @@ namespace PRESENTACION2
         {
             unEP.idProducto = Convert.ToInt32(txtidPro.Text);
             unaC.bajaProducto(unEP);
-
+            MessageBox.Show(" Producto eliminado");
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -105,6 +105,7 @@ namespace PRESENTACION2
             unEP.precio_u = Convert.ToInt32(txtPrecio.Text);
             unEP.lote = Convert.ToInt32(txtLote.Text);
             unaC.modificarProducto(unEP);
+            MessageBox.Show(" Producto modificado");
         }
 
         private void btnListar_Click(object sender, EventArgs e)

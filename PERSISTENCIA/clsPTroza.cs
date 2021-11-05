@@ -14,7 +14,7 @@ namespace PERSISTENCIA
         public void altaTroza(clsETroza unET)
         {
             string consulta;
-            consulta = "INSERT INTO troza VALUES(0,'" + unET.medidad + "','" + unET.especie + "');";
+            consulta = "INSERT INTO troza VALUES('" + unET.idTroza + "','" + unET.medidad + "','" + unET.rodal  + "');";
             ejecutarSQL(consulta);
 
         }
@@ -29,7 +29,7 @@ namespace PERSISTENCIA
         public void modificarTroza(clsETroza unET)
         {
             string consulta;
-            consulta = "UPDATE TROZA SET  medida='" + unET.medidad + "'especie='" + unET.especie + "' WHERE idTroza=" + unET.idTroza;
+            consulta = "UPDATE troza SET  medida='" + unET.medidad + "',rodal='" + unET.rodal + "' WHERE idTroza=" + unET.idTroza;
             ejecutarSQL(consulta);
 
         }
@@ -57,7 +57,7 @@ namespace PERSISTENCIA
             clsETroza unET = new clsETroza();
             unET.idTroza = unaFila.GetInt32("idTroza");
             unET.medidad = unaFila.GetString("medida");
-            unET.especie = unaFila.GetString("especie");
+            unET.rodal = unaFila.GetInt32("rodal");
             return unET;
 
         }
