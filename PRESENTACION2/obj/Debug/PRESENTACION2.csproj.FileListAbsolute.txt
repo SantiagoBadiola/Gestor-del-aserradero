@@ -98,3 +98,6 @@ C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\PR
 C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\PRESENTACION2.csproj.GenerateResource.Cache
 C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\PRESENTACION2.frmRodales.resources
 C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\PRESENTACION2.frmClientes.resources
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\bin\Debug\PRESENTACION2.exe.config
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\PRESENTACION2.exe
+C:\Users\Salon 7\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\PRESENTACION2.pdb
