@@ -14,7 +14,7 @@ namespace PERSISTENCIA
         public void altaPedido(clsEPedido unEP)
         {
             string consulta;
-            consulta= "INSERT INTO pedido VALUES('" + unEP.idPedido + "','" + unEP.FechaInicial + "','" + unEP.FechaLimite + "','" + unEP.cantSoli + "','" +unEP.cantAsig + "','" + unEP.idCliente + "');";
+            consulta= "INSERT INTO pedido VALUES('" + unEP.idPedido + "','" + unEP.FechaInicial + "','" + unEP.FechaLimite + "','" + unEP.cantSoli + "','" +unEP.cantAsig + "','" + unEP.idCliente + "','" + unEP.idProducto + "');";
             ejecutarSQL(consulta);
         }
 
@@ -28,7 +28,7 @@ namespace PERSISTENCIA
         public void modificarPedido(clsEPedido unEP)
         {
             string consulta;
-            consulta = "UPDATE pedido SET  fechaInicial='" + unEP.FechaInicial+ "',fechaLimite='" + unEP.FechaLimite + "',cantSoli='" + unEP.cantSoli + "',cantAsig='" + unEP.cantAsig + "',idCliente='" + unEP.idCliente + "' WHERE idPedido=" + unEP.idPedido;
+            consulta = "UPDATE pedido SET  fechaInicial='" + unEP.FechaInicial+ "',fechaLimite='" + unEP.FechaLimite + "',cantSoli='" + unEP.cantSoli + "',cantAsig='" + unEP.cantAsig + "',idCliente='" + unEP.idCliente + "',idPro='" + unEP.idProducto + "' WHERE idPedido=" + unEP.idPedido;
             ejecutarSQL(consulta);
         }
 
@@ -59,6 +59,7 @@ namespace PERSISTENCIA
             unEP.cantSoli = unaFila.GetInt32("cantSoli");
             unEP.cantAsig = unaFila.GetInt32("cantAsig");
             unEP.idCliente = unaFila.GetInt32("idCliente");
+            unEP.idProducto = unaFila.GetInt32("idPro");
             return unEP;
 
         }

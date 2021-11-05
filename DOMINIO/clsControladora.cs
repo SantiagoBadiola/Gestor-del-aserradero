@@ -216,10 +216,30 @@ namespace DOMINIO
             clsDEspecie unDE = new clsDEspecie();
 
             return unDE.listarEspecies();
-
         }
 
-     
+        //LOTE
+        public void altaLote(clsELote unEL)
+        {
+            clsDLote unDL = new clsDLote();
+            unDL.altaLote(unEL);
+        }
+        public void bajaLote(clsELote unEL)
+        {
+            clsDLote unDL = new clsDLote();
+            unDL.bajaLote(unEL);
+        }
+        public void modificarLote(clsELote unEL)
+        {
+            clsDLote unDL = new clsDLote();
+            unDL.modificarLote(unEL);
+        }
+        public List<clsELote> listarLotes()
+        {
+            clsDLote unDL = new clsDLote();
+
+            return unDL.listarLotes();
+        }
 
     }
 }

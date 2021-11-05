@@ -14,6 +14,7 @@ namespace ENTIDADES
         public int cantSoli { get; set; }
         public int cantAsig { get; set; }
         public int idCliente { get; set; }
+        public int idProducto { get; set; }
 
         public clsEPedido()
         {

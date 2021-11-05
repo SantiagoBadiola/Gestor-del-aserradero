@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary1
+namespace ENTIDADES
 {
-    class clsELote
+    public class clsELote
     {
+        public int idLote { get; set; }
+        public string fecha { get; set; }
+        public int cantidad { get; set; }
+        public int usuario { get; set; }
     }
 }

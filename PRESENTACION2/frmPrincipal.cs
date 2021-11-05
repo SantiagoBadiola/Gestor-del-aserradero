@@ -26,10 +26,7 @@ namespace PRESENTACION2
             if (tipo == "estandar")
             {
                 btnUsuarios.Enabled = false;
-
-
             }
-
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
@@ -79,6 +76,18 @@ namespace PRESENTACION2
             frmClientes unFR = new frmClientes();
             unFR.Show();
             this.Hide();
+        }
+
+        private void btnLotes_Click(object sender, EventArgs e)
+        {
+            frmLote unFL = new frmLote();
+            unFL.Show();
+            this.Hide();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
         }
     }
 }

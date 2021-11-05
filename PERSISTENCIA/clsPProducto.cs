@@ -14,7 +14,7 @@ namespace PERSISTENCIA
         public void altaProducto(clsEProducto unEP)
         {
             string consulta;
-            consulta = "INSERT INTO producto VALUES('"+ unEP.idProducto + "','" + unEP.NombrePro + "','" + unEP.cantidad + "','"  + unEP.lote + "');";
+            consulta = "INSERT INTO producto VALUES('"+ unEP.idProducto + "','" + unEP.NombrePro + "','" + unEP.cantidad + "','" + unEP.precio_u + "','"  + unEP.lote + "');";
             ejecutarSQL(consulta);
         }
 

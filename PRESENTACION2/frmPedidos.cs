@@ -53,7 +53,7 @@ namespace PRESENTACION2
             txtCantSoli.Visible = true;
             txtCantAsig.Visible = true;
             txtClienteID.Visible = true;
-            
+            txtIDPro.Visible = true;
             btnAgregar2.Visible = true;
         }
 
@@ -65,6 +65,7 @@ namespace PRESENTACION2
             unEP.cantSoli = Convert.ToInt32(txtCantSoli.Text);
             unEP.cantAsig = Convert.ToInt32(txtCantAsig.Text);
             unEP.idCliente = Convert.ToInt32(txtClienteID.Text);
+            unEP.idProducto = Convert.ToInt32(txtIDPro.Text);
             unaC.altaPedido(unEP);
             MessageBox.Show(" Pedido agregado");
         }
@@ -94,6 +95,8 @@ namespace PRESENTACION2
             txtCantSoli.Visible = true;
             txtCantAsig.Visible = true;
             txtClienteID.Visible = true;
+            txtIDPro.Visible = true;
+
             btnModificar2.Visible = true;
         }
 

@@ -98,3 +98,4 @@ C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\PR
 C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\PRESENTACION2.csproj.GenerateResource.Cache
 C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\PRESENTACION2.frmRodales.resources
 C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\PRESENTACION2.frmClientes.resources
+C:\Users\Calle\Documents\GitHub\Gestor-del-aserradero\PRESENTACION2\obj\Debug\PRESENTACION2.frmLote.resources
