@@ -76,5 +76,23 @@ namespace PERSISTENCIA
 
             return colUsuarios;
         }
+
+        public List<clsEUsuario> informeU()
+        {
+            List<clsEUsuario> colUsuarios = new List<clsEUsuario>();
+            MySqlDataReader datos;
+            string consulta;
+            clsEUsuario unEU;
+            consulta = "SELECT * FROM usuario";
+            datos = ejecutarYdevolver(consulta);
+
+            while (datos.Read())
+            {
+                unEU = recrearUsuario(datos);
+                colUsuarios.Add(unEU);
+            }
+
+            return colUsuarios;
+        }
     }
 }

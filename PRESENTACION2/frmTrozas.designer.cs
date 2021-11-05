@@ -31,6 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTrozas));
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnModificar2 = new System.Windows.Forms.Button();
+            this.btnEliminar2 = new System.Windows.Forms.Button();
+            this.txtRodal = new System.Windows.Forms.TextBox();
+            this.txtMedida = new System.Windows.Forms.TextBox();
+            this.dgvTrozas = new System.Windows.Forms.DataGridView();
+            this.btnAgregar2 = new System.Windows.Forms.Button();
+            this.txtIDTroza = new System.Windows.Forms.TextBox();
             this.btnInforme = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
@@ -41,21 +48,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Nombre = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.txtIDTroza = new System.Windows.Forms.TextBox();
-            this.btnAgregar2 = new System.Windows.Forms.Button();
-            this.dgvTrozas = new System.Windows.Forms.DataGridView();
-            this.txtMedida = new System.Windows.Forms.TextBox();
-            this.txtRodal = new System.Windows.Forms.TextBox();
-            this.btnEliminar2 = new System.Windows.Forms.Button();
-            this.btnModificar2 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTrozas)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTrozas)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -86,6 +85,74 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(704, 476);
             this.panel3.TabIndex = 5;
+            // 
+            // btnModificar2
+            // 
+            this.btnModificar2.BackColor = System.Drawing.Color.DarkGray;
+            this.btnModificar2.Location = new System.Drawing.Point(351, 147);
+            this.btnModificar2.Name = "btnModificar2";
+            this.btnModificar2.Size = new System.Drawing.Size(113, 40);
+            this.btnModificar2.TabIndex = 19;
+            this.btnModificar2.Text = "MODIFICAR";
+            this.btnModificar2.UseVisualStyleBackColor = false;
+            this.btnModificar2.Click += new System.EventHandler(this.btnModificar2_Click);
+            // 
+            // btnEliminar2
+            // 
+            this.btnEliminar2.BackColor = System.Drawing.Color.DarkGray;
+            this.btnEliminar2.Location = new System.Drawing.Point(194, 147);
+            this.btnEliminar2.Name = "btnEliminar2";
+            this.btnEliminar2.Size = new System.Drawing.Size(113, 40);
+            this.btnEliminar2.TabIndex = 18;
+            this.btnEliminar2.Text = "ELIMINAR";
+            this.btnEliminar2.UseVisualStyleBackColor = false;
+            this.btnEliminar2.Click += new System.EventHandler(this.btnEliminar2_Click);
+            // 
+            // txtRodal
+            // 
+            this.txtRodal.Location = new System.Drawing.Point(351, 72);
+            this.txtRodal.Multiline = true;
+            this.txtRodal.Name = "txtRodal";
+            this.txtRodal.Size = new System.Drawing.Size(122, 32);
+            this.txtRodal.TabIndex = 17;
+            this.txtRodal.Text = "ID Rodal";
+            // 
+            // txtMedida
+            // 
+            this.txtMedida.Location = new System.Drawing.Point(194, 72);
+            this.txtMedida.Multiline = true;
+            this.txtMedida.Name = "txtMedida";
+            this.txtMedida.Size = new System.Drawing.Size(122, 32);
+            this.txtMedida.TabIndex = 16;
+            this.txtMedida.Text = "Medida";
+            // 
+            // dgvTrozas
+            // 
+            this.dgvTrozas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTrozas.Location = new System.Drawing.Point(79, 206);
+            this.dgvTrozas.Name = "dgvTrozas";
+            this.dgvTrozas.Size = new System.Drawing.Size(532, 216);
+            this.dgvTrozas.TabIndex = 15;
+            // 
+            // btnAgregar2
+            // 
+            this.btnAgregar2.BackColor = System.Drawing.Color.DarkGray;
+            this.btnAgregar2.Location = new System.Drawing.Point(44, 147);
+            this.btnAgregar2.Name = "btnAgregar2";
+            this.btnAgregar2.Size = new System.Drawing.Size(113, 40);
+            this.btnAgregar2.TabIndex = 12;
+            this.btnAgregar2.Text = "AGREGAR";
+            this.btnAgregar2.UseVisualStyleBackColor = false;
+            this.btnAgregar2.Click += new System.EventHandler(this.btnAgregar2_Click);
+            // 
+            // txtIDTroza
+            // 
+            this.txtIDTroza.Location = new System.Drawing.Point(35, 72);
+            this.txtIDTroza.Multiline = true;
+            this.txtIDTroza.Name = "txtIDTroza";
+            this.txtIDTroza.Size = new System.Drawing.Size(122, 32);
+            this.txtIDTroza.TabIndex = 11;
+            this.txtIDTroza.Text = "ID Troza";
             // 
             // btnInforme
             // 
@@ -153,7 +220,6 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Nombre);
-            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -203,16 +269,6 @@
             this.Nombre.TabIndex = 14;
             this.Nombre.Text = "Nombre";
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkGray;
-            this.button2.Location = new System.Drawing.Point(36, 458);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 46);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Volver";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.DarkGray;
@@ -237,74 +293,6 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Cerrar sesión";
             // 
-            // txtIDTroza
-            // 
-            this.txtIDTroza.Location = new System.Drawing.Point(35, 72);
-            this.txtIDTroza.Multiline = true;
-            this.txtIDTroza.Name = "txtIDTroza";
-            this.txtIDTroza.Size = new System.Drawing.Size(122, 32);
-            this.txtIDTroza.TabIndex = 11;
-            this.txtIDTroza.Text = "ID Troza";
-            // 
-            // btnAgregar2
-            // 
-            this.btnAgregar2.BackColor = System.Drawing.Color.DarkGray;
-            this.btnAgregar2.Location = new System.Drawing.Point(44, 147);
-            this.btnAgregar2.Name = "btnAgregar2";
-            this.btnAgregar2.Size = new System.Drawing.Size(113, 40);
-            this.btnAgregar2.TabIndex = 12;
-            this.btnAgregar2.Text = "AGREGAR";
-            this.btnAgregar2.UseVisualStyleBackColor = false;
-            this.btnAgregar2.Click += new System.EventHandler(this.btnAgregar2_Click);
-            // 
-            // dgvTrozas
-            // 
-            this.dgvTrozas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTrozas.Location = new System.Drawing.Point(79, 206);
-            this.dgvTrozas.Name = "dgvTrozas";
-            this.dgvTrozas.Size = new System.Drawing.Size(532, 216);
-            this.dgvTrozas.TabIndex = 15;
-            // 
-            // txtMedida
-            // 
-            this.txtMedida.Location = new System.Drawing.Point(194, 72);
-            this.txtMedida.Multiline = true;
-            this.txtMedida.Name = "txtMedida";
-            this.txtMedida.Size = new System.Drawing.Size(122, 32);
-            this.txtMedida.TabIndex = 16;
-            this.txtMedida.Text = "Medida";
-            // 
-            // txtRodal
-            // 
-            this.txtRodal.Location = new System.Drawing.Point(351, 72);
-            this.txtRodal.Multiline = true;
-            this.txtRodal.Name = "txtRodal";
-            this.txtRodal.Size = new System.Drawing.Size(122, 32);
-            this.txtRodal.TabIndex = 17;
-            this.txtRodal.Text = "ID Rodal";
-            // 
-            // btnEliminar2
-            // 
-            this.btnEliminar2.BackColor = System.Drawing.Color.DarkGray;
-            this.btnEliminar2.Location = new System.Drawing.Point(194, 147);
-            this.btnEliminar2.Name = "btnEliminar2";
-            this.btnEliminar2.Size = new System.Drawing.Size(113, 40);
-            this.btnEliminar2.TabIndex = 18;
-            this.btnEliminar2.Text = "ELIMINAR";
-            this.btnEliminar2.UseVisualStyleBackColor = false;
-            this.btnEliminar2.Click += new System.EventHandler(this.btnEliminar2_Click);
-            // 
-            // btnModificar2
-            // 
-            this.btnModificar2.BackColor = System.Drawing.Color.DarkGray;
-            this.btnModificar2.Location = new System.Drawing.Point(351, 147);
-            this.btnModificar2.Name = "btnModificar2";
-            this.btnModificar2.Size = new System.Drawing.Size(113, 40);
-            this.btnModificar2.TabIndex = 19;
-            this.btnModificar2.Text = "MODIFICAR";
-            this.btnModificar2.UseVisualStyleBackColor = false;
-            this.btnModificar2.Click += new System.EventHandler(this.btnModificar2_Click);
-            // 
             // frmTrozas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -320,10 +308,10 @@
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTrozas)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTrozas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -342,7 +330,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Nombre;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.TextBox txtIDTroza;

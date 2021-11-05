@@ -58,6 +58,12 @@
     <Compile Include="frmEspecies.designer.cs">
       <DependentUpon>frmEspecies.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmInformesUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInformesUsuario.Designer.cs">
+      <DependentUpon>frmInformesUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLote.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEspecies.resx">
       <DependentUpon>frmEspecies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInformesUsuario.resx">
+      <DependentUpon>frmInformesUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLote.resx">
       <DependentUpon>frmLote.cs</DependentUpon>

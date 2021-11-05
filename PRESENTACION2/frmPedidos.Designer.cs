@@ -45,6 +45,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cmbClientes = new System.Windows.Forms.ComboBox();
             this.txtCantAsig = new System.Windows.Forms.TextBox();
             this.txtIDPro = new System.Windows.Forms.TextBox();
             this.txtFechaLim = new System.Windows.Forms.TextBox();
@@ -220,6 +221,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.Controls.Add(this.cmbClientes);
             this.panel3.Controls.Add(this.txtCantAsig);
             this.panel3.Controls.Add(this.txtIDPro);
             this.panel3.Controls.Add(this.txtFechaLim);
@@ -235,6 +237,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(704, 476);
             this.panel3.TabIndex = 5;
+            // 
+            // cmbClientes
+            // 
+            this.cmbClientes.FormattingEnabled = true;
+            this.cmbClientes.Location = new System.Drawing.Point(564, 54);
+            this.cmbClientes.Name = "cmbClientes";
+            this.cmbClientes.Size = new System.Drawing.Size(121, 21);
+            this.cmbClientes.TabIndex = 8;
+            this.cmbClientes.SelectedIndexChanged += new System.EventHandler(this.cmbClientes_SelectedIndexChanged);
+            this.cmbClientes.SelectedValueChanged += new System.EventHandler(this.cmbClientes_SelectedValueChanged);
             // 
             // txtCantAsig
             // 
@@ -327,5 +339,6 @@
         private System.Windows.Forms.TextBox txtFechaLim;
         private System.Windows.Forms.TextBox txtIDPro;
         private System.Windows.Forms.TextBox txtCantAsig;
+        private System.Windows.Forms.ComboBox cmbClientes;
     }
 }

@@ -242,4 +242,13 @@ namespace DOMINIO
         }
 
     }
+    //INFORME
+    public List<clsEUsuario> informeU()
+    {
+        clsDUsuario unDU = new clsDUsuario();
+
+        return unDU.informeU();
+
+    }
+
 }

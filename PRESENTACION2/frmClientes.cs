@@ -33,6 +33,7 @@ namespace PRESENTACION2
             txtNombre.Visible = false;
             txtTelefono.Visible = false;
             txtDireccion.Visible = false;
+            dgvClientes.Visible = false;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -88,6 +89,7 @@ namespace PRESENTACION2
 
         private void btnListar_Click(object sender, EventArgs e)
         {
+            dgvClientes.Visible = true;
             dgvClientes.DataSource = unaC.listarClientes();
         }
 

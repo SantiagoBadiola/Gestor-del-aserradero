@@ -40,5 +40,12 @@ namespace DOMINIO
             return unPU.listarUsuarios();
 
         }
+        public List<clsEUsuario> informeU()
+        {
+            clsDUsuario unPU = new clsDUsuario();
+
+            return unPU.informeU();
+
+        }
     }
 }

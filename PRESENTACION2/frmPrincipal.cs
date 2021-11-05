@@ -32,57 +32,50 @@ namespace PRESENTACION2
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             frmUsuarios unFU = new frmUsuarios();//
-            unFU.Show();
-            this.Hide();
+            unFU.Show();   
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
             frmProductos unFU = new frmProductos();
+            unFU.MdiParent = this;
             unFU.Show();
-            this.Hide();
         }
 
         private void btnPedidos_Click(object sender, EventArgs e)
         {
             frmPedidos unFP = new frmPedidos();
             unFP.Show();
-            this.Hide();
         }
 
         private void btnEspecies_Click(object sender, EventArgs e)
         {
             frmEspecies unFE = new frmEspecies();
             unFE.Show();
-            this.Hide();
         }
 
         private void btnTrozas_Click(object sender, EventArgs e)
         {
             frmTrozas unFT = new frmTrozas();
             unFT.Show();
-            this.Hide();
         }
 
         private void btnRodales_Click(object sender, EventArgs e)
         {
             frmRodales unFR = new frmRodales();
             unFR.Show();
-            this.Hide();
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
             frmClientes unFR = new frmClientes();
             unFR.Show();
-            this.Hide();
         }
 
         private void btnLotes_Click(object sender, EventArgs e)
         {
             frmLote unFL = new frmLote();
             unFL.Show();
-            this.Hide();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

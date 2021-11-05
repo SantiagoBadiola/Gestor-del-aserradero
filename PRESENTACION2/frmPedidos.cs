@@ -41,6 +41,12 @@ namespace PRESENTACION2
         {
             ocultarCajas();
             ocultarbotones();
+            var colClientes = unaC.listarClientes();
+            foreach (clsECliente  unCliente in colClientes){
+                cmbClientes.Items.Add(unCliente.nombre);
+                cmbClientes.ValueMember = Convert.ToString(unCliente.idCliente);
+            }
+           
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -109,7 +115,7 @@ namespace PRESENTACION2
             unEP.cantAsig = Convert.ToInt32(txtCantAsig.Text);
             unEP.idCliente = Convert.ToInt32(txtClienteID.Text);
             unaC.modificarPedido(unEP);
-            MessageBox.Show(" Pedido modificado");
+            MessageBox.Show("Pedido modificado");
         }
 
         private void btnListar_Click(object sender, EventArgs e)
@@ -118,6 +124,15 @@ namespace PRESENTACION2
             dgvPedidos.DataSource = unaC.listarPedidos();
         }
 
-        
+        private void cmbClientes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //tClienteID.Text = cmbClientes
+
+        }
+
+        private void cmbClientes_SelectedValueChanged(object sender, EventArgs e)
+        {
+            //txtClienteID.Text = cmbClientes.SelectedValue.ToString();
+        }
     }
 }
