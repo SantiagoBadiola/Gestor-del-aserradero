@@ -14,7 +14,7 @@ namespace PERSISTENCIA
         public void altaPedido(clsEPedido unEP)
         {
             string consulta;
-            consulta= "INSERT INTO pedido VALUES('" + unEP.idPedido + "','" + unEP.FechaInicial + "','" + unEP.FechaLimite + "','" + unEP.cantSoli + "','" +unEP.cantAsig + "','" + unEP.idCliente + "','" + unEP.idProducto + "');";
+            consulta= "INSERT INTO pedido VALUES(0,'" + unEP.FechaInicial + "','" + unEP.FechaLimite + "','" + unEP.cantSoli + "','" +unEP.cantAsig + "','" + unEP.idCliente + "','" + unEP.idProducto + "');";
             ejecutarSQL(consulta);
         }
 

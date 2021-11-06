@@ -30,48 +30,60 @@ namespace PRESENTACION2
         private void ocultarCajas()
         {
             txtidPedido.Visible = false;
-            txtFechaIni.Visible = false;
-            txtFechaLim.Visible = false;
+            dtpFechI.Visible = false;
+            dtpFechaL.Visible = false;
+            lblFInicial.Visible = false;
+            lblFLimite.Visible = false;
             txtCantSoli.Visible = false;
             txtCantAsig.Visible = false;
             txtClienteID.Visible = false;
             txtIDPro.Visible = false;
+            cmbClientes.Visible = false;
+            dgvPedidos.Visible = false;
         }
         private void frmPedidos_Load(object sender, EventArgs e)
         {
             ocultarCajas();
             ocultarbotones();
-            var colClientes = unaC.listarClientes();
-            foreach (clsECliente  unCliente in colClientes){
-                cmbClientes.Items.Add(unCliente.nombre);
-                cmbClientes.ValueMember = Convert.ToString(unCliente.idCliente);
-            }
-           
+            //var colClientes = unaC.listarClientes();
+            //foreach (clsECliente  unCliente in colClientes){
+            //    cmbClientes.Items.Add(unCliente.nombre);
+            //    cmbClientes.ValueMember = Convert.ToString(unCliente.idCliente);
+            //}
+            cmbClientes.DataSource = unaC.listarClientes();
+            cmbClientes.ValueMember = "idCliente";
+            cmbClientes.DisplayMember = "nombre";
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             ocultarbotones();
             ocultarCajas();
-            txtidPedido.Visible = true;
-            txtFechaIni.Visible = true;
-            txtFechaLim.Visible = true;
+            cmbClientes.DataSource = unaC.listarClientes();
+            cmbClientes.ValueMember = "idCliente";
+            cmbClientes.DisplayMember = "nombre";
+           // txtidPedido.Visible = true;
+            dtpFechI.Visible = true;
+            dtpFechaL.Visible = true;
+            lblFInicial.Visible = true;
+            lblFLimite.Visible = true;
             txtCantSoli.Visible = true;
             txtCantAsig.Visible = true;
             txtClienteID.Visible = true;
             txtIDPro.Visible = true;
             btnAgregar2.Visible = true;
+            cmbClientes.Visible = true;
         }
 
         private void btnAgregar2_Click(object sender, EventArgs e)
         {
-            unEP.idPedido = Convert.ToInt32(txtidPedido.Text);
-            unEP.FechaInicial = txtFechaIni.Text;
-            unEP.FechaLimite = txtFechaLim.Text;
+           // unEP.idPedido = Convert.ToInt32(txtidPedido.Text);
+            unEP.FechaInicial = dtpFechI.Value.Date.ToShortDateString();
+            unEP.FechaLimite = dtpFechaL.Value.Date.ToShortDateString();
             unEP.cantSoli = Convert.ToInt32(txtCantSoli.Text);
             unEP.cantAsig = Convert.ToInt32(txtCantAsig.Text);
-            unEP.idCliente = Convert.ToInt32(txtClienteID.Text);
-            unEP.idProducto = Convert.ToInt32(txtIDPro.Text);
+            //unEP.idCliente = cmbClientes.SelectedValue.ToString();
+            unEP.idProducto = Convert.ToInt32(txtIDPro.Text); ;
             unaC.altaPedido(unEP);
             MessageBox.Show(" Pedido agregado");
         }
@@ -96,8 +108,10 @@ namespace PRESENTACION2
             ocultarbotones();
             ocultarCajas();
             txtidPedido.Visible = true;
-            txtFechaIni.Visible = true;
-            txtFechaLim.Visible = true;
+            dtpFechI.Visible = true;
+            dtpFechaL.Visible = true;
+            lblFInicial.Visible = true;
+            lblFLimite.Visible = true;
             txtCantSoli.Visible = true;
             txtCantAsig.Visible = true;
             txtClienteID.Visible = true;
@@ -109,8 +123,8 @@ namespace PRESENTACION2
         private void btnModificar2_Click(object sender, EventArgs e)
         {
             unEP.idPedido = Convert.ToInt32(txtidPedido.Text);
-            unEP.FechaInicial = txtFechaIni.Text;
-            unEP.FechaLimite = txtFechaLim.Text;
+            unEP.FechaInicial = dtpFechI.Value.Date.ToShortDateString();
+            unEP.FechaLimite = dtpFechaL.Value.Date.ToShortDateString();
             unEP.cantSoli = Convert.ToInt32(txtCantSoli.Text);
             unEP.cantAsig = Convert.ToInt32(txtCantAsig.Text);
             unEP.idCliente = Convert.ToInt32(txtClienteID.Text);
@@ -126,13 +140,13 @@ namespace PRESENTACION2
 
         private void cmbClientes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //tClienteID.Text = cmbClientes
+            txtClienteID.Text = cmbClientes.ValueMember.ToString();
 
         }
 
         private void cmbClientes_SelectedValueChanged(object sender, EventArgs e)
         {
-            //txtClienteID.Text = cmbClientes.SelectedValue.ToString();
+            txtClienteID.Text = cmbClientes.SelectedValue.ToString();
         }
     }
 }

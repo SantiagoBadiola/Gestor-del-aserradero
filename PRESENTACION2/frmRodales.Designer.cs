@@ -28,15 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRodales));
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dgvRodales = new System.Windows.Forms.DataGridView();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.txtEspecie = new System.Windows.Forms.TextBox();
             this.btnModificar2 = new System.Windows.Forms.Button();
             this.btnEliminar2 = new System.Windows.Forms.Button();
-            this.txtFecha = new System.Windows.Forms.TextBox();
             this.txtTamanio = new System.Windows.Forms.TextBox();
-            this.dgvRodales = new System.Windows.Forms.DataGridView();
             this.btnAgregar2 = new System.Windows.Forms.Button();
             this.txtIDRodal = new System.Windows.Forms.TextBox();
             this.btnInforme = new System.Windows.Forms.Button();
@@ -75,12 +80,13 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.Controls.Add(this.dgvRodales);
+            this.panel3.Controls.Add(this.lblFecha);
+            this.panel3.Controls.Add(this.dtpFecha);
             this.panel3.Controls.Add(this.txtEspecie);
             this.panel3.Controls.Add(this.btnModificar2);
             this.panel3.Controls.Add(this.btnEliminar2);
-            this.panel3.Controls.Add(this.txtFecha);
             this.panel3.Controls.Add(this.txtTamanio);
-            this.panel3.Controls.Add(this.dgvRodales);
             this.panel3.Controls.Add(this.btnAgregar2);
             this.panel3.Controls.Add(this.txtIDRodal);
             this.panel3.Location = new System.Drawing.Point(21, 84);
@@ -88,9 +94,67 @@
             this.panel3.Size = new System.Drawing.Size(704, 476);
             this.panel3.TabIndex = 5;
             // 
+            // dgvRodales
+            // 
+            this.dgvRodales.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            this.dgvRodales.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvRodales.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRodales.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvRodales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRodales.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvRodales.EnableHeadersVisualStyles = false;
+            this.dgvRodales.GridColor = System.Drawing.Color.SteelBlue;
+            this.dgvRodales.Location = new System.Drawing.Point(145, 234);
+            this.dgvRodales.Name = "dgvRodales";
+            this.dgvRodales.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRodales.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            this.dgvRodales.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvRodales.Size = new System.Drawing.Size(394, 171);
+            this.dgvRodales.TabIndex = 24;
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Location = new System.Drawing.Point(276, 50);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(108, 13);
+            this.lblFecha.TabIndex = 23;
+            this.lblFecha.Text = "Fecha de Plantacion:";
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Location = new System.Drawing.Point(390, 50);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(149, 20);
+            this.dtpFecha.TabIndex = 21;
+            // 
             // txtEspecie
             // 
-            this.txtEspecie.Location = new System.Drawing.Point(503, 72);
+            this.txtEspecie.Location = new System.Drawing.Point(566, 68);
             this.txtEspecie.Multiline = true;
             this.txtEspecie.Name = "txtEspecie";
             this.txtEspecie.Size = new System.Drawing.Size(122, 32);
@@ -119,15 +183,6 @@
             this.btnEliminar2.UseVisualStyleBackColor = false;
             this.btnEliminar2.Click += new System.EventHandler(this.btnEliminar2_Click);
             // 
-            // txtFecha
-            // 
-            this.txtFecha.Location = new System.Drawing.Point(351, 72);
-            this.txtFecha.Multiline = true;
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(122, 32);
-            this.txtFecha.TabIndex = 17;
-            this.txtFecha.Text = "Fecha de plantación";
-            // 
             // txtTamanio
             // 
             this.txtTamanio.Location = new System.Drawing.Point(194, 72);
@@ -136,14 +191,6 @@
             this.txtTamanio.Size = new System.Drawing.Size(122, 32);
             this.txtTamanio.TabIndex = 16;
             this.txtTamanio.Text = "Tamaño";
-            // 
-            // dgvRodales
-            // 
-            this.dgvRodales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRodales.Location = new System.Drawing.Point(79, 206);
-            this.dgvRodales.Name = "dgvRodales";
-            this.dgvRodales.Size = new System.Drawing.Size(532, 216);
-            this.dgvRodales.TabIndex = 15;
             // 
             // btnAgregar2
             // 
@@ -313,7 +360,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "frmRodales";
-            this.Text = "frmRodales";
+            this.Text = "Rodales";
             this.Load += new System.EventHandler(this.frmRodales_Load);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -332,9 +379,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnModificar2;
         private System.Windows.Forms.Button btnEliminar2;
-        private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.TextBox txtTamanio;
-        private System.Windows.Forms.DataGridView dgvRodales;
         private System.Windows.Forms.Button btnAgregar2;
         private System.Windows.Forms.TextBox txtIDRodal;
         private System.Windows.Forms.Button btnInforme;
@@ -350,5 +395,8 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.TextBox txtEspecie;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.DataGridView dgvRodales;
     }
 }

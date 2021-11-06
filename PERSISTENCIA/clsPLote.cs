@@ -14,7 +14,7 @@ namespace PERSISTENCIA
         public void altaLote(clsELote unEL)
         {
             string consulta;
-            consulta = "INSERT INTO lote VALUES('" + unEL.idLote + "','" + unEL.fecha + "','" + unEL.cantidad + "','" + unEL.usuario + "');";
+            consulta = "INSERT INTO lote VALUES(0,'" + unEL.fecha + "','" + unEL.cantidad + "','" + unEL.usuario + "');";
             ejecutarSQL(consulta);
         }
 

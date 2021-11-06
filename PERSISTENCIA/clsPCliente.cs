@@ -14,7 +14,7 @@ namespace PERSISTENCIA
         public void altaCliente(clsECliente unEC)
         {
             string consulta;
-            consulta = "INSERT INTO cliente VALUES('"  + unEC.idCliente + "','" + unEC.nombre + "','" + unEC.telefono + "','" + unEC.direccion + "');";
+            consulta = "INSERT INTO cliente VALUES(0,'" + unEC.nombre + "','" + unEC.telefono + "','" + unEC.direccion + "');";
             ejecutarSQL(consulta);
         }
 
@@ -49,8 +49,6 @@ namespace PERSISTENCIA
 
             return colClientes;
         }
-
-       
 
         private clsECliente recrearCliente(MySqlDataReader unaFila)
         {

@@ -38,7 +38,6 @@ namespace PRESENTACION2
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             ocultarComponentes();
-            txtIDTroza.Visible = true;
             txtMedida.Visible = true;
             txtRodal.Visible = true;
             btnAgregar2.Visible = true;
@@ -46,7 +45,6 @@ namespace PRESENTACION2
 
         private void btnAgregar2_Click(object sender, EventArgs e)
         {
-            unET.idTroza = Convert.ToInt32(txtIDTroza.Text);
             unET.medidad = txtMedida.Text;
             unET.rodal = Convert.ToInt32(txtRodal.Text);
             unaC.altaTroza(unET);

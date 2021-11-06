@@ -29,33 +29,39 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPedidos));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtVolver = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnListar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.dgvPedidos = new System.Windows.Forms.DataGridView();
             this.btnModificar2 = new System.Windows.Forms.Button();
             this.btnEliminar2 = new System.Windows.Forms.Button();
             this.btnAgregar2 = new System.Windows.Forms.Button();
             this.txtCantSoli = new System.Windows.Forms.TextBox();
-            this.txtFechaIni = new System.Windows.Forms.TextBox();
             this.txtidPedido = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblFLimite = new System.Windows.Forms.Label();
+            this.lblFInicial = new System.Windows.Forms.Label();
+            this.dtpFechaL = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechI = new System.Windows.Forms.DateTimePicker();
             this.cmbClientes = new System.Windows.Forms.ComboBox();
             this.txtCantAsig = new System.Windows.Forms.TextBox();
             this.txtIDPro = new System.Windows.Forms.TextBox();
-            this.txtFechaLim = new System.Windows.Forms.TextBox();
             this.txtClienteID = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
+            this.dgvPedidos = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
             this.SuspendLayout();
             // 
             // txtVolver
@@ -112,14 +118,6 @@
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // dgvPedidos
-            // 
-            this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPedidos.Location = new System.Drawing.Point(124, 252);
-            this.dgvPedidos.Name = "dgvPedidos";
-            this.dgvPedidos.Size = new System.Drawing.Size(394, 171);
-            this.dgvPedidos.TabIndex = 14;
-            // 
             // btnModificar2
             // 
             this.btnModificar2.BackColor = System.Drawing.Color.DarkGray;
@@ -161,15 +159,6 @@
             this.txtCantSoli.Size = new System.Drawing.Size(122, 32);
             this.txtCantSoli.TabIndex = 12;
             this.txtCantSoli.Text = "Cantidad Solicitada";
-            // 
-            // txtFechaIni
-            // 
-            this.txtFechaIni.Location = new System.Drawing.Point(140, 106);
-            this.txtFechaIni.Multiline = true;
-            this.txtFechaIni.Name = "txtFechaIni";
-            this.txtFechaIni.Size = new System.Drawing.Size(122, 32);
-            this.txtFechaIni.TabIndex = 11;
-            this.txtFechaIni.Text = "Fecha Inicial";
             // 
             // txtidPedido
             // 
@@ -221,22 +210,56 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.Controls.Add(this.dgvPedidos);
+            this.panel3.Controls.Add(this.lblFLimite);
+            this.panel3.Controls.Add(this.lblFInicial);
+            this.panel3.Controls.Add(this.dtpFechaL);
+            this.panel3.Controls.Add(this.dtpFechI);
             this.panel3.Controls.Add(this.cmbClientes);
             this.panel3.Controls.Add(this.txtCantAsig);
             this.panel3.Controls.Add(this.txtIDPro);
-            this.panel3.Controls.Add(this.txtFechaLim);
             this.panel3.Controls.Add(this.txtClienteID);
-            this.panel3.Controls.Add(this.dgvPedidos);
             this.panel3.Controls.Add(this.btnModificar2);
             this.panel3.Controls.Add(this.btnEliminar2);
             this.panel3.Controls.Add(this.btnAgregar2);
             this.panel3.Controls.Add(this.txtCantSoli);
-            this.panel3.Controls.Add(this.txtFechaIni);
             this.panel3.Controls.Add(this.txtidPedido);
             this.panel3.Location = new System.Drawing.Point(21, 84);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(704, 476);
             this.panel3.TabIndex = 5;
+            // 
+            // lblFLimite
+            // 
+            this.lblFLimite.AutoSize = true;
+            this.lblFLimite.Location = new System.Drawing.Point(165, 118);
+            this.lblFLimite.Name = "lblFLimite";
+            this.lblFLimite.Size = new System.Drawing.Size(70, 13);
+            this.lblFLimite.TabIndex = 23;
+            this.lblFLimite.Text = "Fecha Limite:";
+            // 
+            // lblFInicial
+            // 
+            this.lblFInicial.AutoSize = true;
+            this.lblFInicial.Location = new System.Drawing.Point(165, 71);
+            this.lblFInicial.Name = "lblFInicial";
+            this.lblFInicial.Size = new System.Drawing.Size(70, 13);
+            this.lblFInicial.TabIndex = 22;
+            this.lblFInicial.Text = "Fecha Inicial:";
+            // 
+            // dtpFechaL
+            // 
+            this.dtpFechaL.Location = new System.Drawing.Point(240, 118);
+            this.dtpFechaL.Name = "dtpFechaL";
+            this.dtpFechaL.Size = new System.Drawing.Size(150, 20);
+            this.dtpFechaL.TabIndex = 21;
+            // 
+            // dtpFechI
+            // 
+            this.dtpFechI.Location = new System.Drawing.Point(241, 71);
+            this.dtpFechI.Name = "dtpFechI";
+            this.dtpFechI.Size = new System.Drawing.Size(149, 20);
+            this.dtpFechI.TabIndex = 20;
             // 
             // cmbClientes
             // 
@@ -266,15 +289,6 @@
             this.txtIDPro.TabIndex = 17;
             this.txtIDPro.Text = "IDProducto";
             // 
-            // txtFechaLim
-            // 
-            this.txtFechaLim.Location = new System.Drawing.Point(268, 106);
-            this.txtFechaLim.Multiline = true;
-            this.txtFechaLim.Name = "txtFechaLim";
-            this.txtFechaLim.Size = new System.Drawing.Size(122, 32);
-            this.txtFechaLim.TabIndex = 16;
-            this.txtFechaLim.Text = "Fecha Limite";
-            // 
             // txtClienteID
             // 
             this.txtClienteID.Location = new System.Drawing.Point(454, 174);
@@ -294,6 +308,48 @@
             this.panel1.Size = new System.Drawing.Size(162, 603);
             this.panel1.TabIndex = 6;
             // 
+            // dgvPedidos
+            // 
+            this.dgvPedidos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            this.dgvPedidos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvPedidos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPedidos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPedidos.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvPedidos.EnableHeadersVisualStyles = false;
+            this.dgvPedidos.GridColor = System.Drawing.Color.SteelBlue;
+            this.dgvPedidos.Location = new System.Drawing.Point(168, 260);
+            this.dgvPedidos.Name = "dgvPedidos";
+            this.dgvPedidos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPedidos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            this.dgvPedidos.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvPedidos.Size = new System.Drawing.Size(394, 171);
+            this.dgvPedidos.TabIndex = 24;
+            // 
             // frmPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -303,15 +359,15 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "frmPedidos";
-            this.Text = "frmPedidos";
+            this.Text = "Pedidos";
             this.Load += new System.EventHandler(this.frmPedidos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -323,12 +379,10 @@
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.DataGridView dgvPedidos;
         private System.Windows.Forms.Button btnModificar2;
         private System.Windows.Forms.Button btnEliminar2;
         private System.Windows.Forms.Button btnAgregar2;
         private System.Windows.Forms.TextBox txtCantSoli;
-        private System.Windows.Forms.TextBox txtFechaIni;
         private System.Windows.Forms.TextBox txtidPedido;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.LinkLabel linkLabel1;
@@ -336,9 +390,13 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtClienteID;
-        private System.Windows.Forms.TextBox txtFechaLim;
         private System.Windows.Forms.TextBox txtIDPro;
         private System.Windows.Forms.TextBox txtCantAsig;
         private System.Windows.Forms.ComboBox cmbClientes;
+        private System.Windows.Forms.DateTimePicker dtpFechI;
+        private System.Windows.Forms.DateTimePicker dtpFechaL;
+        private System.Windows.Forms.Label lblFLimite;
+        private System.Windows.Forms.Label lblFInicial;
+        private System.Windows.Forms.DataGridView dgvPedidos;
     }
 }

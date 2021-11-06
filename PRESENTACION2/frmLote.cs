@@ -15,6 +15,7 @@ namespace PRESENTACION2
     public partial class frmLote : Form
     {
         clsControladora unaC = new clsControladora();
+        clsEUsuario elUsuario { get; set; }
         clsELote unEL = new clsELote();
         public frmLote()
         {
@@ -23,6 +24,8 @@ namespace PRESENTACION2
         private void frmLote_Load(object sender, EventArgs e)
         {
             ocultarComponentes();
+           // lblUsuario.Text = "" + elUsuario.nombre;
+            //lblRol.Text = "" + elUsuario.tipo;
         }
         private void ocultarComponentes()
         {
@@ -30,17 +33,18 @@ namespace PRESENTACION2
             btnEliminar2.Visible = false;
             btnModificar2.Visible = false;
             txtID.Visible = false;
-            txtFecha.Visible = false;
+            dtpFech.Visible = false;
             txtCantidad.Visible = false;
             txtUsuario.Visible = false;
             dgvLotes.Visible = false;
+            lblFecha.Visible = false;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             ocultarComponentes();
-            txtID.Visible = true;
-            txtFecha.Visible = true;
+            dtpFech.Visible = true;
+            lblFecha.Visible = true;
             txtCantidad.Visible = true;
             txtUsuario.Visible = true;
             btnAgregar2.Visible = true;
@@ -48,8 +52,7 @@ namespace PRESENTACION2
 
         private void btnAgregar2_Click(object sender, EventArgs e)
         {
-            unEL.idLote = Convert.ToInt32(txtID.Text);
-            unEL.fecha = txtFecha.Text;
+            unEL.fecha = dtpFech.Value.Date.ToShortDateString();
             unEL.cantidad = Convert.ToInt32(txtCantidad.Text);
             unEL.usuario = Convert.ToInt32(txtUsuario.Text);
             unaC.altaLote(unEL);
@@ -74,7 +77,8 @@ namespace PRESENTACION2
         {
             ocultarComponentes();
             txtID.Visible = true;
-            txtFecha.Visible = true;
+            dtpFech.Visible = true;
+            lblFecha.Visible = true;
             txtCantidad.Visible = true;
             txtUsuario.Visible = true;
             btnModificar2.Visible = true;
@@ -83,7 +87,7 @@ namespace PRESENTACION2
         private void btnModificar2_Click(object sender, EventArgs e)
         {
             unEL.idLote = Convert.ToInt32(txtID.Text);
-            unEL.fecha = txtFecha.Text;
+            unEL.fecha = dtpFech.Value.Date.ToShortDateString();
             unEL.cantidad = Convert.ToInt32(txtCantidad.Text);
             unEL.usuario = Convert.ToInt32(txtUsuario.Text);
             unaC.modificarLote(unEL);

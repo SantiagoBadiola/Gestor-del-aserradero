@@ -14,7 +14,7 @@ namespace PERSISTENCIA
         public void altaRodal(clsERodal unER)
         {
             string consulta;
-            consulta = "INSERT INTO rodal VALUES('" +  unER.idRodal + "','" + unER.tamanio + "','" + unER.fecha + "','" + unER.especie + "');";
+            consulta = "INSERT INTO rodal VALUES(0,'" + unER.tamanio + "','" + unER.fecha + "','" + unER.especie + "');";
             ejecutarSQL(consulta);
         }
 

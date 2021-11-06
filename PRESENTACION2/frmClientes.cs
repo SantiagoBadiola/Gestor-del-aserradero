@@ -39,7 +39,6 @@ namespace PRESENTACION2
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             ocultarComponentes();
-            txtID.Visible = true;
             txtNombre.Visible = true;
             txtTelefono.Visible = true;
             txtDireccion.Visible = true;
@@ -47,7 +46,6 @@ namespace PRESENTACION2
         }
         private void btnAgregar2_Click(object sender, EventArgs e)
         {
-            unC.idCliente = Convert.ToInt32(txtID.Text);
             unC.nombre = txtNombre.Text;
             unC.telefono = Convert.ToInt32(txtTelefono.Text);
             unC.direccion = txtDireccion.Text;

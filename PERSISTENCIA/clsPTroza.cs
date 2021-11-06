@@ -14,7 +14,7 @@ namespace PERSISTENCIA
         public void altaTroza(clsETroza unET)
         {
             string consulta;
-            consulta = "INSERT INTO troza VALUES('" + unET.idTroza + "','" + unET.medidad + "','" + unET.rodal  + "');";
+            consulta = "INSERT INTO troza VALUES(0,'" + unET.medidad + "','" + unET.rodal  + "');";
             ejecutarSQL(consulta);
 
         }

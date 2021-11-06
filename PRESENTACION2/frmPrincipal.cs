@@ -38,7 +38,6 @@ namespace PRESENTACION2
         private void btnProductos_Click(object sender, EventArgs e)
         {
             frmProductos unFU = new frmProductos();
-            unFU.MdiParent = this;
             unFU.Show();
         }
 

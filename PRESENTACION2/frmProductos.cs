@@ -20,37 +20,30 @@ namespace PRESENTACION2
         public frmProductos()
         {
             InitializeComponent();
-            this.Load += Form1_Load;
         }
 
-        private void ocultarCajas()
+        private void ocultarComponentes()
         {
             txtidPro.Visible = false;
             txtPNombre.Visible = false;
             txtCantidad.Visible = false;
             txtPrecio.Visible = false;
             txtLote.Visible = false;
-
-        }
-        private void ocultarbotones()
-        {
             btnAgregar2.Visible = false;
             btnEliminar2.Visible = false;
             btnModificar2.Visible = false;
+            dgvProductos.Visible = false;
         }
 
-        private void Form1_Load(object sender, EventArgs e) { 
-            ocultarCajas();
-            ocultarbotones();
-
+        
+        private void frmProductos_Load(object sender, EventArgs e)
+        {
+            ocultarComponentes();
         }
-
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            ocultarCajas();
-            ocultarbotones();
-            txtidPro.Visible = true;
+            ocultarComponentes();
             txtPNombre.Visible = true;
             txtCantidad.Visible = true;
             txtPrecio.Visible = true;
@@ -60,7 +53,6 @@ namespace PRESENTACION2
 
         private void btnAgregar2_Click(object sender, EventArgs e)
         {
-            unEP.idProducto = Convert.ToInt32(txtidPro.Text);
             unEP.NombrePro = txtPNombre.Text;
             unEP.cantidad = Convert.ToInt32(txtCantidad.Text);
             unEP.precio_u = Convert.ToInt32(txtPrecio.Text);
@@ -71,8 +63,7 @@ namespace PRESENTACION2
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            ocultarbotones();
-            ocultarCajas();
+            ocultarComponentes();
             txtidPro.Visible = true;
             btnEliminar2.Visible = true;
 
@@ -87,8 +78,7 @@ namespace PRESENTACION2
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            ocultarbotones();
-            ocultarCajas();
+            ocultarComponentes();
             txtidPro.Visible = true;
             txtPNombre.Visible = true;
             txtCantidad.Visible = true;
@@ -110,8 +100,7 @@ namespace PRESENTACION2
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-            ocultarbotones();
-            ocultarCajas();
+            ocultarComponentes();
             dgvProductos.Visible = true;
             dgvProductos.DataSource = unaC.listarProductos();
         }

@@ -20,14 +20,10 @@ namespace PRESENTACION2
         {
             InitializeComponent();
         }
-        private void ocultarCajas()
+        private void ocultarComponentes()
         {
             txtID.Visible = false;
             txtNombre.Visible = false;
-
-        }
-        private void ocultarbotones()
-        {
             btnAgregar2.Visible = false;
             btnEliminar2.Visible = false;
             btnModificar2.Visible = false;
@@ -36,21 +32,17 @@ namespace PRESENTACION2
        
         private void frmEspecies_Load(object sender, EventArgs e)
         {
-            ocultarCajas();
-            ocultarbotones();
+            ocultarComponentes();
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            ocultarbotones();
-            ocultarCajas();
-            txtID.Visible = true;
+            ocultarComponentes();
             txtNombre.Visible = true;
             btnAgregar2.Visible = true;
         }
 
         private void btnAgregar2_Click(object sender, EventArgs e)
         {
-            unEE.idEspecie = Convert.ToInt32(txtID.Text);
             unEE.nombre = txtNombre.Text;
             unaC.altaEspecie(unEE);
             MessageBox.Show("Especie agregada");
@@ -58,8 +50,7 @@ namespace PRESENTACION2
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            ocultarbotones();
-            ocultarCajas();
+            ocultarComponentes();
             txtID.Visible = true;
             btnEliminar2.Visible = true;
         }
@@ -73,8 +64,7 @@ namespace PRESENTACION2
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            ocultarbotones();
-            ocultarCajas();
+            ocultarComponentes();
             txtID.Visible = true;
             txtNombre.Visible = true;
             btnModificar2.Visible = true;
@@ -90,8 +80,7 @@ namespace PRESENTACION2
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-            ocultarCajas();
-            ocultarbotones();
+            ocultarComponentes();
             dgvEspecie.Visible = true;
             dgvEspecie.DataSource = unaC.listarEspecie();
         }

@@ -14,7 +14,7 @@ namespace PERSISTENCIA
         public void altaEspecie(clsEEspecie unEE)
         {
             string consulta;
-            consulta = "INSERT INTO especie VALUES('" + unEE.idEspecie + "','" + unEE.nombre + "');";
+            consulta = "INSERT INTO especie VALUES(0,'"  + unEE.nombre + "');";
             ejecutarSQL(consulta);
         }
 

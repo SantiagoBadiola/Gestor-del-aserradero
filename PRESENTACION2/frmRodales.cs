@@ -16,6 +16,7 @@ namespace PRESENTACION2
     {
         clsControladora unaC = new clsControladora();
         clsERodal unER = new clsERodal();
+        
         public frmRodales()
         {
             InitializeComponent();
@@ -30,26 +31,26 @@ namespace PRESENTACION2
             btnEliminar2.Visible = false;
             btnModificar2.Visible = false;
             txtIDRodal.Visible = false;
-            txtFecha.Visible = false;
+            dtpFecha.Visible = false;
             txtTamanio.Visible = false;
             txtEspecie.Visible = false;
             dgvRodales.Visible = false;
+            lblFecha.Visible = false;
         }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             ocultarComponentes();
             btnAgregar2.Visible = true;
-            txtIDRodal.Visible = true;
-            txtFecha.Visible = true;
+            dtpFecha.Visible = true;
             txtTamanio.Visible = true;
             txtEspecie.Visible = true;
+            lblFecha.Visible = true;
         }
 
         private void btnAgregar2_Click(object sender, EventArgs e)
         {
-            unER.idRodal = Convert.ToInt32(txtIDRodal.Text);
             unER.tamanio = Convert.ToInt32(txtTamanio.Text);
-            unER.fecha = txtTamanio.Text;
+            unER.fecha = dtpFecha.Value.Date.ToShortDateString();
             unER.especie = Convert.ToInt32(txtEspecie.Text);
             unaC.altaRodal(unER);
             MessageBox.Show("Rodal agregado");
@@ -74,16 +75,16 @@ namespace PRESENTACION2
             ocultarComponentes();
             btnModificar2.Visible = true;
             txtIDRodal.Visible = true;
-            txtFecha.Visible = true;
+            dtpFecha.Visible = true;
             txtTamanio.Visible = true;
             txtEspecie.Visible = true;
+            lblFecha.Visible = true;
         }
 
         private void btnModificar2_Click(object sender, EventArgs e)
         {
-            unER.idRodal = Convert.ToInt32(txtIDRodal.Text);
             unER.tamanio = Convert.ToInt32(txtTamanio.Text);
-            unER.fecha = txtTamanio.Text;
+            unER.fecha = dtpFecha.Value.Date.ToShortDateString();
             unER.especie = Convert.ToInt32(txtEspecie.Text);
             unaC.modificarRodal(unER);
             MessageBox.Show("Rodal modificado");
